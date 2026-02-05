@@ -1,0 +1,158 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F8C8DC;
+}
+
+h1 {
+    margin-top: 50px;
+    margin-left: 510px;
+    font-size: 60px;
+    font-family: 'Karla', sans-serif;
+    font-weight: lighter;
+}
+
+
+
+@keyframes slide_animation {
+    0% {
+        left: 0px;
+    }
+
+    10% {
+        left: 0px;
+    }
+
+    20% {
+        left: 1200px;
+    }
+
+    30% {
+        left: 1200px;
+    }
+
+    40% {
+        left: 2400px;
+    }
+
+    50% {
+        left: 2400px;
+    }
+
+    60% {
+        left: 1200px;
+    }
+
+    70% {
+        left: 1200px;
+    }
+
+    80% {
+        left: 0px;
+    }
+
+    90% {
+        left: 0px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+@-webkit-keyframes slide_animation {
+    0% {
+        left: 0px;
+    }
+
+    10% {
+        left: 0px;
+    }
+
+    20% {
+        left: 1200px;
+    }
+
+    30% {
+        left: 1200px;
+    }
+
+    40% {
+        left: 2400px;
+    }
+
+    50% {
+        left: 2400px;
+    }
+
+    60% {
+        left: 1200px;
+    }
+
+    70% {
+        left: 1200px;
+    }
+
+    80% {
+        left: 0px;
+    }
+
+    90% {
+        left: 0px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+.slider-frame {
+    border: 1px solid black;
+    overflow: hidden;
+    height: 300px;
+    width: 500px;
+    margin-inline: auto;
+    margin-block: 50px;
+}
+
+.slide-images {
+
+    width: 3600px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    animation-name: slide_animation;
+    -webkit-animation-duration: 200s;
+    animation-duration: 200s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+.img-container {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    float: left;
+    border: 1px solid black;
+}
+
+.video {
+    width: 50%;
+    
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.vid-text-div {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
